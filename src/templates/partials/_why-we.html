@@ -1,0 +1,65 @@
+
+<!--begin why-we-->
+<div class="why-we ">
+	<!--begin l-->
+	<div class="l why-we__l">
+		<!--begin two-col-->
+		<div class="two-col">
+			<!--begin two-col__left-->
+			<div class="two-col__left why-we__left">
+				<div class="plate-list ">
+					{% for test in plateList %}
+					<div class="plate-block js-plate-block" >
+						<div class="plate-block__inner js-plate-inner">
+							<div class="plate-block__front " style="background-image: url('img/{{test.img}}.jpg');">
+							</div>
+							<div class="plate-block__back">
+								<p class="plate-block__title">
+									{{test.title}}
+								</p>
+								<p class="plate-block__text">
+									{{test.text}}
+								</p>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<!--end two-col__left-->
+			<!--begin two-col__right-->
+			<div class="two-col__right why-we__right">
+				<h2 class="title-m why-we__title">
+					Чому саме ми?
+				</h2>
+				<!--begin why-we__inner-->
+				<div class="why-we__inner">
+					<div class="why-we__text article">
+						<p>Звісно, ми розуміємо, що пропозиція на ринку створення сайтів сьогодні дуже велика і Вам важко вибрати надійного розробника для свого сайту.</p>
+						<p>Тут треба ще щось додумати і дописати, хоча би пару рядків, щоб заповнити цю пустоту чим небудь. Можна вирівняти по лівому краю.</p>
+					</div>
+					<div class="why-we__nav">
+						<a href="#">Портфоліо</a>
+						<a href="#">Відгуки</a>
+					</div>
+					<div class="why-we__spec js-ww-block">
+						<div class="why-we__spec-line why-we__spec-line--top js-ww-top-line"></div>
+						<div class="why-we__spec-line why-we__spec-line--left js-ww-left-line"></div>
+						<div class="why-we__spec-line why-we__spec-line--bottom js-ww-bottom-line"></div>
+						<img class="why-we__anim-logo js-ww-logo" src="img/ww-logo.png" alt="clickart">
+						<p>Ми робимо свою роботу не лише заради грошей. Ми трохи фанатіємо від процесу, тому вкладаємося в кожен наш проект і створюємо його як для себе.
+						</p>
+					</div>
+
+				</div>
+				<!--end why-we__inner-->
+
+			</div>
+			<!--end two-col__right-->
+		</div>
+		<!--end two-col-->
+	</div>
+
+	<!--end l-->
+</div>
+<!--end why-we-->

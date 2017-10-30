@@ -1,0 +1,58 @@
+.header
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	padding-top: 27px
+	z-index: 1
+	&__inner
+		+clr
+	&__left
+		float: left
+	&__right
+		float: right
+	&__center
+		position: absolute
+		top: 56px
+		left: 50%
+		transform: translateX(-50%)
+		+lm
+			top: 40px
+	&__logo
+		svg, img
+			width: 405px
+			height: 114px
+.burger
+	width: 66px
+	height: 52px
+	position: relative
+	cursor: pointer
+	&__line
+		display: block
+		height: 7px
+		background: $white
+		width: 100%
+		+trans
+		position: absolute
+		left: 0
+		&--top
+			top: 0
+		&--middle
+			top: 50%
+			margin-top: -3px
+		&--bottom
+			bottom: 0
+.langs
+	font-size: 0
+	a
+		display: inline-block
+		vertical-align: top
+		font-size: 24px
+		font-weight: 700
+		color: $white
+		margin-right: 28px
+		&:last-of-type
+			margin-right: 0
+		&.is-active
+			color: $lgreen
+

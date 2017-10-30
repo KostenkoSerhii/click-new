@@ -1,0 +1,120 @@
+$rob: 'Roboto', sans-serif
+$robc: 'Roboto Condensed', sans-serif
+
+
+$blue: #023050
+$lgreen: #00d596
+$green:  #178e69
+$green2: #199d76
+$black: #000
+$black-main: #1d1d1b
+$white: #fff
+$border-color: #1d1d1b
+
+=lm
+	@media only screen and (max-width: "1400px")
+		@content
+=lg
+	@media only screen and (max-width: "1256px")
+		@content
+=l
+	@media only screen and (max-width: "1129px")
+		@content
+=m
+	@media only screen and (max-width: "991px")
+		@content
+=xs
+	@media only screen and (max-width: "767px")
+		@content
+=mmin
+	@media only screen and (min-width: "992px")
+		@content
+
+body
+	line-height: 1.2
+	font-size: 18px
+	font-weight: 300
+	font-family: $rob
+	color: $black
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6 
+	font-weight: 400
+.title, .title-m, .title-lm
+	line-height: 1
+	font-weight: 700
+.title
+	color: $lgreen
+	font-size: 60px
+	span
+		color: $white
+		font-size: 48px
+.title-m
+	color: $green
+	font-size: 50px
+	margin-bottom: 40px
+.title-lm
+	color: $green
+	font-size: 40px
+	margin-bottom: 35px
+.title-sm
+	font-size: 24px
+	font-weight: 400
+	color: $green
+	line-height: 1
+
+.two-col
+	+clr
+	&__left, &__right
+		width: 50%
+		position: relative
+		+m
+			width: 100%
+	&__left
+		float: left
+		padding-right: 13px
+	&__right
+		float: right
+		padding-left: 13px
+.article
+	p
+		margin-bottom: 13px
+		line-height: 1.2
+		font-size: 18px
+		font-weight: 300
+		color: $black
+.border
+	position: relative
+	overflow: hidden
+	height: 1px
+	.l
+		height: 1px
+		&:before, &:after
+			content: ''
+			position: absolute
+			height: 1px
+			bottom: 0
+			width: 3000px
+		&:before
+			background: $green2
+		&:after
+			background: $border-color
+	&--left-green
+		.l
+			&:before
+				// left: 308px
+				left: 294px
+				margin-left: -3000px
+			&:after
+				// left: 327px
+				left: 313px
+	&--right-green
+		.l
+			&:before
+				right: 313px
+			&:after
+				right: 294px
+				margin-right: -3000px
+				
+
+		

@@ -1,0 +1,145 @@
+---
+title: clickArt.com.ua
+
+plateList: [
+{
+	img: 'plate1',
+	title: 'Власний стиль та досвідчена команда',
+	text: 'Враховуємо у своїх роботах сучасні тенденціі веб дизайну та технології розробки сайтів'
+},
+{
+	img: 'plate1',
+	title: 'Іноваційні ідеї та креативний дизайн',
+	text: 'Враховуємо у своїх роботах сучасні тенденціі веб дизайну та технології розробки сайтів'
+},
+{
+	img: 'plate3',
+	title: 'Адаптивна верстка та сучасні технології',
+	text: 'Враховуємо у своїх роботах сучасні тенденціі веб дизайну та технології розробки сайтів'
+},
+{
+	img: 'plate4',
+	title: 'Відповідальність та дотримання строків',
+	text: 'Враховуємо у своїх роботах сучасні тенденціі веб дизайну та технології розробки сайтів'
+}
+
+]
+profList: [
+{
+	img: 'search',
+	text: 'Моніторинг Вашої ніші та розробка прототипу сайту'
+},
+{
+	img: 'artist',
+	text: 'Створення дизайн - макету та його затвердження'
+},
+{
+	img: 'coding',
+	text: 'Верстка макету та адаптація под мобільні пристрої'
+},
+{
+	img: 'file',
+	text: 'Написання текстів та наповнення контентом '
+},
+{
+	img: 'server',
+	text: 'Програмування, та настройка додаткових сервісів'
+},
+{
+	img: 'cloud-computing',
+	text: 'Перенос сайту на хостинг замовника та налаштування'
+}
+]
+
+techList: [
+{
+	img: 'git'
+},
+{
+	img: 'gulp'
+},
+{
+	img: 'js'
+},
+{
+	img: 'bootstrap'
+},
+{
+	img: 'sass'
+},
+{
+	img: 'wordpress'
+},
+{
+	img: 'html5'
+}
+]
+portfolioList: [
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+},
+{
+	img: 'pf-img',
+	title: 'Progress investments'
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	{% include "partials/_header.html" %}
+	{% include "partials/_fscreen.html" %}
+	{% include "partials/_why-we.html" %}
+	{% include "partials/_prof-carry.html" %}
+	{% include "partials/_technologies.html" %}
+	{% include "partials/_portfolio.html" %}
+
+<!-- 	{# variable example #}
+	<h1>{{title}}</h1>
+
+	
+	{# partial example #}
+
+	{# mixin example #}
+	{{mixins.icon('facebook')}}
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #} -->
+
+{% endblock %}

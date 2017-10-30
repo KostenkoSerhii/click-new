@@ -1,0 +1,50 @@
+		<!--begin prof carry-->
+		<div class="pcarry">
+			<div class="border border--left-green">
+				<div class="l "></div>
+			</div>
+			<div class="l pcarry__l">
+				<h2 class="title-m pcarry__title">Професіонально виконуємо</h2>
+				<div class="pcarry__tabs">
+					<!--begin ptabs-->
+					<div class="ptabs js-tabs">
+						<div class="ptabs__nav js-tabs-nav">
+							<a class="js-tabs-link" data-target="0" href="#"><span>Копірайтинг</span></a>
+							<a class="js-tabs-link " data-target="1" href="#"><span>Дизайн - макети</span></a>
+							<a class="js-tabs-link" data-target="2" href="#"><span>Web - розробку</span></a>
+							<a class="js-tabs-link" data-target="3" href="#"><span>Сайти під ключ</span></a>
+						</div>
+						<!--begin ptabs__cont-->
+						<div class="ptabs__cont">
+							<h3 class="ptabs__title title-sm">З чого складається ця послуга:</h3>
+							<div class="ptabs__item js-tabs-item" data-item="0">
+								<div class="ptabs__item-inner">
+									{% for item in profList %}
+									<div class="ptblock">
+										<div class="ptblock__img">
+											<img src="img/{{item.img}}.png" alt="alt">
+										</div>
+										<p>{{item.text}}</p>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="ptabs__item js-tabs-item" data-item="1">
+								1
+							</div>
+							<div class="ptabs__item js-tabs-item" data-item="2">
+								2
+							</div>
+							<div class="ptabs__item js-tabs-item" data-item="3">
+								3
+							</div>
+						</div>
+						<!--end ptabs__cont-->
+
+					</div>
+					<!--end ptabs-->
+				</div>
+			</div>
+		</div>
+		<!--end prof carry-->
+		

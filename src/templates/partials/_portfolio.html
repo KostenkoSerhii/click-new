@@ -1,0 +1,52 @@
+<!--begin portfolio-->
+<div class="portf">
+	<div class="border border--right-green">
+		<div class="l "></div>
+	</div>
+	<!--begin portf__inner-->
+	<div class="portf__inner">
+		<!--begin l-->
+		<div class="l">
+			<h2 class="title-lm portf__title">Портфоліо</h2>
+			<!--begin portfolio-list-->
+			<div class="pf-list">
+				{% for item in portfolioList %}
+				<div class="pf-item">
+					<div class="pf-item__img">
+						<img src="img/{{item.img}}.jpg" alt="alt">
+					</div>
+					<div class="pf-item__content">
+						<h3 class="pf-item__title">{{item.title}}</h3>
+						<a class="pf-item__link" href="#">Дивитися <i>{{mixins.icon("pf-arrow")}}</i></a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<!--end portfolio-list-->
+			<div class="pf-list__more">
+				<a href="#"> Більше робіт</a>
+			</div>
+			<!--begin pf-list pf-list--hidden-->
+			<div class="pf-list pf-list--hidden">
+				{% for item in portfolioList %}
+				<div class="pf-item">
+					<div class="pf-item__img">
+						<img src="img/{{item.img}}.jpg" alt="alt">
+					</div>
+					<div class="pf-item__content">
+						<h3 class="pf-item__title">{{item.title}}</h3>
+						<a class="pf-item__link" href="#">Дивитися <i>{{mixins.icon("pf-arrow")}}</i></a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<!--end pf-list pf-list--hidden-->
+
+		</div>
+		<!--end l-->
+	</div>
+	<!--end portf__inner-->
+
+
+</div>
+<!--end portfolio-->
