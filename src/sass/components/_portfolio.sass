@@ -2,16 +2,37 @@
 	&__inner
 		padding-top: 60px
 .pf-list
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-between
+	// display: flex
+	// flex-wrap: wrap
+	// justify-content: space-between
+	font-size: 0
+
+	margin-bottom: 48px
 	&--hidden
 		display: none
+	&__more
+		text-align: center
+		margin-bottom: 50px
+		a
+			font-size: 24px
+			display: inline-block
+			vertical-align: top
+			border-bottom: 1px solid $green
+			+trans
+			color: $green
+			&:hover
+				border-color: transparent
+
 .pf-item
 	width: 405 / 1256 * 100 +%
+	display: inline-block
+	vertical-align: top
+	margin-right: 20 / 1256 * 100 +%
 	height: 330px
 	position: relative
 	margin-bottom: 18px
+	&:nth-of-type(3n)
+		margin-right: 0
 	&:hover
 		.pf-item__content
 			transform: scale(1)
@@ -23,18 +44,20 @@
 			object-fit: cover
 			height: 100%
 			width: 100%
+
 	&__content
 		position: absolute
 		top: 0
 		left: 0
 		width: 100%
 		height: 100%
-		background: $green
+		
 		+trans
 		opacity: 0
 		transform-origin: 50% 50%
 		transform: scale(0)
 		z-index: 1
+		background: $green2
 	&__title
 		+vcenter
 		font-size: 30px

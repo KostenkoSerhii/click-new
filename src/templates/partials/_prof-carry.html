@@ -1,5 +1,5 @@
 		<!--begin prof carry-->
-		<div class="pcarry">
+		<div class="pcarry js-pcarry" >
 			<div class="border border--left-green">
 				<div class="l "></div>
 			</div>
@@ -30,13 +30,40 @@
 								</div>
 							</div>
 							<div class="ptabs__item js-tabs-item" data-item="1">
-								1
+								<div class="ptabs__item-inner">
+									{% for item in profList %}
+									<div class="ptblock">
+										<div class="ptblock__img">
+											<img src="img/{{item.img}}.png" alt="alt">
+										</div>
+										<p>{{item.text}}</p>
+									</div>
+									{% endfor %}
+								</div>
 							</div>
 							<div class="ptabs__item js-tabs-item" data-item="2">
-								2
+								<div class="ptabs__item-inner">
+									{% for item in profList %}
+									<div class="ptblock">
+										<div class="ptblock__img">
+											<img src="img/{{item.img}}.png" alt="alt">
+										</div>
+										<p>{{item.text}}</p>
+									</div>
+									{% endfor %}
+								</div>
 							</div>
 							<div class="ptabs__item js-tabs-item" data-item="3">
-								3
+								<div class="ptabs__item-inner">
+									{% for item in profList %}
+									<div class="ptblock">
+										<div class="ptblock__img">
+											<img src="img/{{item.img}}.png" alt="alt">
+										</div>
+										<p>{{item.text}}</p>
+									</div>
+									{% endfor %}
+								</div>
 							</div>
 						</div>
 						<!--end ptabs__cont-->
