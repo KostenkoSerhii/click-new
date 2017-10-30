@@ -40,6 +40,6 @@ gulp.task('lint', [
     
     'prettier',
     
-    'lint:sass',
+    // 'lint:sass',
     'lint:html'
 ]);
