@@ -23,6 +23,6 @@ function whyWeAnimation(){
 
 	};
 
-	PubSub.subscribe('why-we-animation')
+	// PubSub.subscribe('why-we-animation')
 	}
 	module.exports = whyWeAnimation;

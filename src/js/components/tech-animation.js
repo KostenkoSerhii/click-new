@@ -16,6 +16,6 @@ function techAnimation(){
 
 	};
 
-	PubSub.subscribe('why-we-animation')
+	// PubSub.subscribe('tech-animation')
 	}
 	module.exports = techAnimation;

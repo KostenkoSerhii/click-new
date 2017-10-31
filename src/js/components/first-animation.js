@@ -1,7 +1,7 @@
 import { TimelineMax } from 'gsap';
 import 'pixi.js';
 import 'pixi-filters';
-// import PubSub from 'pubsub-js';
+import PubSub from 'pubsub-js';
 
 function fTextAnimation(){
 
@@ -11,10 +11,13 @@ function fTextAnimation(){
 	textSecond = $(".js-main-text-second").html(),
 	fscreenW = $fscreen.width(),
 	fscreenH = $fscreen.height();
+	let token = PubSub.subscribe('start-ftext-anim', animation);
+
 	//задержка с установокй цвета
 	let app = new PIXI.Application(fscreenW, fscreenH, {
 		backgroundColor: 0x023050
 	});
+
 	app.stage.interactive = true;
 	$scene.append(app.view);
 
@@ -79,19 +82,21 @@ app.ticker.add(function(delta) {
 });
 
 
-let tl = new TimelineMax();
-tl
-.to(displacementFilter.scale, 1, { x: 0.1, y: 0.1 },0)
-.to(fText.position, 1, { x: fscreenW /2 - fText.width /2 },0)
-.to(fText, 1, { alpha: 1 },0)
-.to(sText.position, 1, { x: fscreenW /2 - sText.width /2 },0)
-.to(sText, 1, { alpha: 1 },0);
+
+
 
 function animation(){
-	console.log("start pixi animation")
+	console.log("start pixi animation");
+	
+	let tl = new TimelineMax();
+	tl
+	.to(displacementFilter.scale, 1, { x: 0.1, y: 0.1 },0)
+	.to(fText.position, 1, { x: fscreenW /2 - fText.width /2 },0)
+	.to(fText, 1, { alpha: 1 },0)
+	.to(sText.position, 1, { x: fscreenW /2 - sText.width /2 },0)
+	.to(sText, 1, { alpha: 1 },0);
+};
 
-	};
-
-	// PubSub.subscribe('why-we-animation')
+	// PubSub.subscribe('finish logo animation')
 }
 module.exports = fTextAnimation;
