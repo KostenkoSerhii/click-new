@@ -1,5 +1,5 @@
 import sayHello from './lib/sayHello.js';
-// import logoAnimation from './components/logo-animation.js';
+import logoAnimation from './components/logo-animation.js';
 import whyWeAnimation from './components/why-we-animation.js';
 import fTextAnimation from './components/first-animation.js';
 import techAnimation from './components/tech-animation.js';
@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 	let supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
+	logoAnimation();
 	fTextAnimation();
 	svgUseIt();
 	scrollMagic();
-	// logoAnimation();
 	hoverPlate();
 	whyWeAnimation();
 	techAnimation();
