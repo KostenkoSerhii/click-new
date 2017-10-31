@@ -3,7 +3,7 @@ import PubSub from 'pubsub-js';
 function logoAnimation(){
 	console.log("start logo animation");
 	let logo = $(".js-logo-svg");
-	let tl = new TimelineMax({delay: 1, onComplete: function(){PubSub.publish('start-ftext-anim')}});
+	let tl = new TimelineMax({delay: 1, onStart: function(){logo.css("visibility", "visible")}, onComplete: function(){PubSub.publish('start-ftext-anim')}});
 
 	tl
 	.from($(".js-logo-C-1"), 0.8, { y: 30, opacity: 0 },0)
