@@ -86,7 +86,7 @@ app.ticker.add(function(delta) {
 
 
 function animation(){
-	console.log("start pixi animation");
+	// console.log("start pixi animation");
 	
 	let tl = new TimelineMax();
 	tl

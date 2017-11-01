@@ -64,6 +64,7 @@
     "require-yaml": "^0.0.1",
     "run-sequence": "^1.1.5",
     "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.8.1",
     "svg-use-it": "^1.1.6",
     "through2": "^2.0.1",
     "vinyl-buffer": "^1.0.0",

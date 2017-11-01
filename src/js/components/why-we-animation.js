@@ -5,7 +5,7 @@ function whyWeAnimation(){
 	let token = PubSub.subscribe('why-we-animation', animation);
 
 	function animation(){
-		console.log("start why we animation")
+		// console.log("start why we animation")
 		
 		let tl = new TimelineMax(),
 		$logo = $(".js-ww-logo"),

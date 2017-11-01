@@ -1,0 +1,29 @@
+<!--begin portf-->
+<div class="portf">
+	<!--begin pslider-->
+	<div class="pslider js-pslider">
+		<!--begin pslider__slide-->
+		{% for test in portfolioSlider %}
+		<div class="pslider__slide js-pslider-slide" data-project-name="{{test.title}}">
+			<!--begin l-->
+			<div class="l">
+				<div class="pslider__slide-content">
+					<div class="pslider__img">
+						<img src="https://placebear.com/g/800/300" alt="alt">
+					</div>
+					<div class="pslider__text">
+						<a href="#" class="pslider__title">{{test.title}}</a>
+						<div class="pslider__descr">
+							<p>{{test.text}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end l-->
+		</div>
+		<!--end pslider__slide-->
+		{% endfor %}
+	</div>
+	<!--end pslider-->
+</div>
+<!--end portf-->

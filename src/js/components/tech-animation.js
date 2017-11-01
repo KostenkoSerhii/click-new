@@ -5,7 +5,7 @@ function techAnimation(){
 	let token = PubSub.subscribe('tech-animation', animation);
 
 	function animation(){
-		console.log("start tech animation")
+		// console.log("start tech animation")
 		
 		let tl = new TimelineMax(),
 		$techItem = $(".js-tech-item");

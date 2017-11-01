@@ -1,7 +1,7 @@
 import { TimelineMax } from 'gsap';
 import PubSub from 'pubsub-js';
 function logoAnimation(){
-	console.log("start logo animation");
+	// console.log("start logo animation");
 	let logo = $(".js-logo-svg");
 	let tl = new TimelineMax({delay: 1, onStart: function(){logo.css("visibility", "visible")}, onComplete: function(){PubSub.publish('start-ftext-anim')}});
 
