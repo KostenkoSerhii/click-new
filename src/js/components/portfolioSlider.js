@@ -11,7 +11,8 @@
 		vertical: true,
 		dots: true,
 		arrows: false,
-		infinite: false
+		infinite: false,
+		draggable: false
 	});
 
 	let navList = portfSlider.find(`.slick-dots`);
