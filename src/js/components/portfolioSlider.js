@@ -3,8 +3,6 @@
 	scrollResolution = true,
 	slideCount = $(".js-pslider-slide").length - 1,
 	activeSlide,
-	fistSlideActive = false,
-	lastSlideActive = false,
 	firstScrollFinish = false;
 
 	portfSlider.slick({
@@ -16,17 +14,15 @@
 	});
 
 	let navList = portfSlider.find(`.slick-dots`);
-	console.log(slideCount);
 
 	document.querySelector(".js-pslider").addEventListener("wheel", onWheel);
 
-
 	function onWheel(e) {
-
 		if(activeSlide == 0 || activeSlide == slideCount) {
 			document.querySelector(".js-pslider").removeEventListener("wheel", onWheel);
 			return;
 		};
+
 		let event = e || window.event,
 		delta = event.deltaY + "" || event.detail + "" || event.wheelDelta + "",
 		scrollDirection = delta.indexOf("-") ? "bottom" : "top";
@@ -47,11 +43,9 @@
 			scrollTop: portfSlider.offset().top
 		}, 500);
 		changeNav(nextSlide);
-		// scrollResolution = false;
 	});
 
 	portfSlider.on('afterChange', function(event, slick, currentSlide){
-		// scrollResolution = true;
 		activeSlide = currentSlide;
 	});
 
