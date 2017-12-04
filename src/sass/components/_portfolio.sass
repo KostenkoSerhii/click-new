@@ -207,14 +207,15 @@
 					opacity: 1
 			&.slick-active
 				button
-					opacity: 0
-					transition: none
+					opacity: 1
+					// transition: none
 				&:before
-					width: 100%
+					// width: 100%
+					display: none
 			&.after-active
 				&:before
-					background: $black
+					background: $white
 					width: 15px
 				button
-					color: $black
+					color: $white
 
